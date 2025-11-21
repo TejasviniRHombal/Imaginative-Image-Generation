@@ -1,0 +1,11 @@
+# core
+torch>=2.0.0
+transformers>=4.30.0
+diffusers>=0.18.0
+accelerate
+safetensors
+pillow
+# optional web ui
+gradio
+# utilities
+tqdm
