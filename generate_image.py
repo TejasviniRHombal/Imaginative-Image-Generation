@@ -14,7 +14,7 @@ def get_device(prefer_gpu=True):
     if prefer_gpu and torch.cuda.is_available():
         return "cuda"
     # Apple Silicon (M1/M2/M3/M4)
-    if prefer_gpu and hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+       if prefer_gpu and hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
         return "mps"
     return "cpu"
 
